@@ -8,7 +8,7 @@ BiocManager::install("mixOmics")
 data_pc=dat_expr[-1]
 
 #PCA
-MyResult.pca <- pca(data_pc, scale = F) 
+MyResult.pca <- pca(data_pc, scale = T) 
 
 #score plot of PCA
 plotIndiv(MyResult.pca, style = "graphics", group = as.factor(dat_expr$Group), legend=F, 
