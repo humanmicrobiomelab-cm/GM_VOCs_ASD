@@ -10,7 +10,7 @@ data_pc=dat_expr[-1]
 #PCA
 MyResult.pca <- pca(data_pc, scale = F) 
 
-#score plot
+#score plot of PCA
 plotIndiv(MyResult.pca, style = "graphics", group = as.factor(dat_expr$Group), legend=F, 
           col.per.group = c( "royalblue1","orange1"), ind.names = F,
           X.label = "PC1 (17.8%)",
@@ -27,7 +27,8 @@ plotIndiv(MyResult.pca, style = "graphics", group = as.factor(dat_expr$Group), l
 Group= as.factor(dat_expr$Group)
 
 MyResult.pls= plsda(data_pc, Group, scale = T)
-par(mar=c(6,5,3,15))
+
+#score plot of PLS-DA
 plotIndiv(MyResult.pls, style = "graphics", group = as.factor(dat_expr$Group), legend=F, 
           col.per.group = c( "royalblue1","orange1"), ind.names = T,
           X.label = "C1 (12%)",
