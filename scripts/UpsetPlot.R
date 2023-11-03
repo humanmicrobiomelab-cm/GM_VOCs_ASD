@@ -2,6 +2,7 @@
 df_upset_xl= read_xlsx("upset_with_condition.xlsx")
 df_upset_xl=df_upset_xl[1:64,]
 
+install.packages("UpSetR")
 library("UpSetR")
 BiocManager::install("ComplexHeatmap")
 
