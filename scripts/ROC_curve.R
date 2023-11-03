@@ -15,11 +15,17 @@ test <- subset(df2, split == "FALSE")
 
 model1 <- glm(Group ~ var_1, data=train, family="binomial")
 
+#install ROCR package
+install.packages("ROCR")
+library(ROCR)
+
+#predictor evalutation and performance measure
 pred1=predict(model1, newdata=test, type="response")
 pr1=prediction(pred1, test$Group)
 auc1 <- performance(pr1, measure = "auc")
 auc1 <- auc1@y.values[[1]]
 
+#Plot ROC curve
 roc1 <- performance(pr1, measure = "tpr", x.measure = "fpr")
 plot(roc1,
      lwd=2,
