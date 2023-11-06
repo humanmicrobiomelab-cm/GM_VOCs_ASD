@@ -16,5 +16,4 @@ The folder named "scripts" contains the main scripts used to perform the analyse
 
 -**UpsetPlot.R**: this script was used to construct the Upset plot to visualize the intersections of significant VOCs between different ASD subgroups and CTRL condition.               
 
-All the R scripts along with a set of tutorials for performing **WGCNA** analysis are freely available at this [link](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/Tutorials/).
-The [WGCNA](https://cran.r-project.org/web/packages/WGCNA/index.html) R package can be downloaded from CRAN repository.      
+In addition, the folder named **WGCNA** contains the scripts we used for performing WGCNA analysis. All the original WGCNA R scripts along with a set of tutorials are freely available at this [link](https://horvath.genetics.ucla.edu/html/CoexpressionNetwork/Rpackages/WGCNA/Tutorials/). The [WGCNA](https://cran.r-project.org/web/packages/WGCNA/index.html) R package can be downloaded from CRAN repository.      
